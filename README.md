@@ -10,7 +10,7 @@
 
 | 순서 | 볼 곳 | 확인할 질문 |
 | --- | --- | --- |
-| 1 | 이 README의 ‘예제에 들어 있는 것’과 ‘자료 한 건을 옮겨 보기’ | 목록 한 행은 무엇을 뜻할까? |
+| 1 | 이 README의 예제 설명과 ‘TTL 파일을 처음 읽을 때’ | 목록 한 행은 무엇을 뜻할까? |
 | 2 | [source-20.csv](source-20.csv) | 글·강의 20건에 제목·작성자·주제가 어떻게 적혀 있을까? |
 | 3 | [ontology.ttl](ontology.ttl) | 글과 강의를 어떤 종류로 분류하고, 관계에 어떤 뜻을 부여했을까? |
 | 4 | [graph-20.ttl](graph-20.ttl)에서 resource_00000 찾기 | 같은 자료 한 건이 그래프에서는 어떻게 표현될까? |
@@ -34,6 +34,40 @@
 | source_resource_00000 | 이 자료가 원천 CSV의 어느 행에서 왔는지 가리키는 기록 |
 
 person_00에 실제 사람 이름이 붙어 있거나 topic_0가 특정 기술을 뜻하는 것은 아닙니다. **작성자와 주제의 연결을 시험하기 위한 임의의 번호**입니다. Learning material 2 같은 제목도 실제 문서 제목이 아닌 생성된 문자열입니다.
+
+## TTL 파일을 처음 읽을 때
+
+.ttl은 Turtle 형식의 확장자입니다. 웹 표준 기구 W3C가 표준화한 RDF 그래프의 텍스트 표기법으로, 자료 사이의 관계를 파일에 적는 문법입니다. 이 실습에서는 Python의 RDFLib가 이 형식을 읽고 씁니다. [W3C Turtle 표준](https://www.w3.org/TR/turtle/)
+
+Turtle 문법은 표준이고, ex:Article이나 ex:authoredBy 같은 학습 자료의 개념·관계 이름은 이 예제에서 정했습니다. ontology.ttl에는 분류·관계의 정의, graph-20.ttl에는 개별 자료의 사실, shapes.ttl에는 데이터 검사 조건을 같은 Turtle 문법으로 적었습니다.
+
+먼저 한 문장을 읽어 보세요.
+
+```turtle
+@prefix ex: <https://example.org/learning/> .
+
+ex:resource_00000 ex:authoredBy ex:person_00 .
+```
+
+둘째 문장은 ‘자료 0의 작성자는 사람 0이다’라는 뜻입니다. **끝의 마침표(.)는 Turtle 문장이 끝났다는 표시**입니다. 줄바꿈만으로는 문장이 끝나지 않습니다. 첫 줄의 @prefix 선언도 마침표로 끝납니다. [Turtle의 기본 문장](https://www.w3.org/TR/turtle/#simple-triples)
+
+같은 자료에 대한 사실을 이어 적을 때는 세미콜론(;)을 사용합니다.
+
+```turtle
+ex:resource_00000 ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 .
+```
+
+위 문장은 ‘자료 0의 작성자는 사람 0이다’와 ‘자료 0은 주제 0을 다룬다’라는 **두 사실**을 묶어 적은 것입니다. 세미콜론 뒤에서는 맨 앞의 자료 번호를 다시 쓰지 않습니다. 마지막 마침표에서 문장을 닫습니다. 따라서 마침표 하나가 항상 사실 하나와 대응하는 것은 아닙니다. [같은 주어의 사실 이어 쓰기](https://www.w3.org/TR/turtle/#predicate-lists)
+
+| 기호 | 읽는 법 |
+| --- | --- |
+| @prefix ex: | 공통 주소에 ex:라는 줄임말을 붙인다. |
+| ex:resource_00000 | ex:의 공통 주소 뒤에 자료 번호를 붙인 식별자다. |
+| a | ‘이 종류에 속한다’는 뜻으로, 표준 rdf:type의 줄임말이다. |
+| ; | 같은 자료에 대한 다음 사실을 이어 적는다. |
+| . | 이 Turtle 문장을 끝낸다. |
+| "제목" | 따옴표 안의 문자열 값이다. |
 
 ## 자료 한 건을 옮겨 보기
 
