@@ -19,7 +19,7 @@ CSV를 RDF로 변환하고 경량화 전후에 같은 질문에 답할 수 있�
 | 5 | 같은 그래프로 세 가지 실험하기 | [읽기](https://medium.com/p/892a4539be5d) |
 | 6 | 줄인 뒤에도 같은 답이 나오는지 확인하기 | [읽기](https://medium.com/p/1007ee5729d3) |
 
-1~3편은 개념과 보존 기준을 정리하고, 4~6편은 이 저장소의 데이터를 변환하고 결과를 비교합니다.
+1–3편은 개념과 보존 기준을 정리하고, 4–6편은 이 저장소의 데이터를 변환하고 결과를 비교합니다.
 
 ## 파일 구성
 
@@ -110,7 +110,7 @@ run_lab.py는 동일한 생성 규칙으로 원천 CSV를 다시 만들고 run-2
 | graph.ttl.gz | Turtle의 gzip 압축본; 질의 전 해제 필요 |
 | topic-0.ttl | 주제 0의 자료와 지원 연결을 선택한 명시적 그래프 |
 | selective-types.ttl | 두 상위 타입만 추가해 보관한 그래프 |
-| Q1_topic_0.rq ~ Q5_text_resources.rq | 실행에서 사용하는 다섯 SPARQL 질의 |
+| Q1_topic_0.rq부터 Q5_text_resources.rq까지 | 실행에서 사용하는 다섯 SPARQL 질의 |
 | results.json | 이번 실행의 수량, 전체 결과 집합 비교, SHACL 위반, 측정 환경 |
 | 04-conversion.html | 변환 결과 요약 화면 |
 | 05-lightening.html | 경량화 실험 요약 화면 |
@@ -144,9 +144,9 @@ python3 -m http.server 18769 --bind 127.0.0.1
 - 경량화: http://127.0.0.1:18769/run-1000/05-lightening.html
 - 검증: http://127.0.0.1:18769/run-1000/06-verification.html
 
-Windows에서는 서버 명령의 python3 대신 .\.venv\Scripts\python.exe를 사용합니다. 확인을 마치면 서버를 실행한 터미널에서 Ctrl+C로 종료합니다.
+Windows에서는 서버 명령의 `python3` 대신 `.\.venv\Scripts\python.exe`를 사용합니다. 확인을 마치면 서버를 실행한 터미널에서 Ctrl+C로 종료합니다.
 
-이 페이지들은 실제 실행 결과를 표시하는 요약 화면입니다. Medium 4~6편의 캡처는 원고 작성 당시 1,000건 실행 화면에서 남겼습니다.
+이 페이지들은 실제 실행 결과를 표시하는 요약 화면입니다. Medium 4–6편의 캡처는 원고 작성 당시 1,000건 실행 화면에서 남겼습니다.
 
 ### 변환
 
