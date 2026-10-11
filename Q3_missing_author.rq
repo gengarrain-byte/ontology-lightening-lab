@@ -1,0 +1,4 @@
+PREFIX ex: <https://example.org/learning/>
+SELECT DISTINCT ?r WHERE {
+      ?r a ex:LearningResource . FILTER NOT EXISTS { ?r ex:authoredBy ?a }
+    }

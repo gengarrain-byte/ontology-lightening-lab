@@ -1,0 +1,1256 @@
+{
+  "records": 5000,
+  "physical_csv_rows": 5295,
+  "duplicate_rows": 295,
+  "schema_triples": 19,
+  "explicit_triples_with_schema": 29993,
+  "rdfs_triples": 62600,
+  "selected_records": 834,
+  "partial_explicit_triples": 5026,
+  "partial_rdfs_triples": 10927,
+  "selective_type_triples": 37493,
+  "storage": [
+    {
+      "format": "nt",
+      "file": "graph.nt",
+      "bytes": 3943412,
+      "graph_equal": true
+    },
+    {
+      "format": "turtle",
+      "file": "graph.ttl",
+      "bytes": 1130530,
+      "graph_equal": true
+    },
+    {
+      "format": "xml",
+      "file": "graph.rdf",
+      "bytes": 3192494,
+      "graph_equal": true
+    },
+    {
+      "format": "turtle+gzip",
+      "file": "graph.ttl.gz",
+      "bytes": 71976,
+      "graph_equal": true
+    }
+  ],
+  "closure_ms": {
+    "full": 19805.133084009867,
+    "partial": 1077.6980000082403
+  },
+  "answer_checks": [
+    {
+      "variant": "full_rdfs",
+      "query": "Q1_topic_0",
+      "count": 834,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "full_rdfs",
+      "query": "Q2_resources",
+      "count": 5000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "full_rdfs",
+      "query": "Q3_missing_author",
+      "count": 52,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "full_rdfs",
+      "query": "Q4_provenance",
+      "count": 5000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "full_rdfs",
+      "query": "Q5_text_resources",
+      "count": 2500,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "gzip_restored_rdfs",
+      "query": "Q1_topic_0",
+      "count": 834,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "gzip_restored_rdfs",
+      "query": "Q2_resources",
+      "count": 5000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "gzip_restored_rdfs",
+      "query": "Q3_missing_author",
+      "count": 52,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "gzip_restored_rdfs",
+      "query": "Q4_provenance",
+      "count": 5000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "gzip_restored_rdfs",
+      "query": "Q5_text_resources",
+      "count": 2500,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "topic_0_rdfs",
+      "query": "Q1_topic_0",
+      "count": 834,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "topic_0_rdfs",
+      "query": "Q2_resources",
+      "count": 834,
+      "same_global_answers": false,
+      "missing": 4166,
+      "extra": 0
+    },
+    {
+      "variant": "topic_0_rdfs",
+      "query": "Q3_missing_author",
+      "count": 8,
+      "same_global_answers": false,
+      "missing": 44,
+      "extra": 0
+    },
+    {
+      "variant": "topic_0_rdfs",
+      "query": "Q4_provenance",
+      "count": 834,
+      "same_global_answers": false,
+      "missing": 4166,
+      "extra": 0
+    },
+    {
+      "variant": "topic_0_rdfs",
+      "query": "Q5_text_resources",
+      "count": 834,
+      "same_global_answers": false,
+      "missing": 1666,
+      "extra": 0
+    },
+    {
+      "variant": "selective_types",
+      "query": "Q1_topic_0",
+      "count": 834,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "selective_types",
+      "query": "Q2_resources",
+      "count": 5000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "selective_types",
+      "query": "Q3_missing_author",
+      "count": 52,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "selective_types",
+      "query": "Q4_provenance",
+      "count": 5000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "selective_types",
+      "query": "Q5_text_resources",
+      "count": 2500,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "removed_provenance_rdfs",
+      "query": "Q1_topic_0",
+      "count": 834,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "removed_provenance_rdfs",
+      "query": "Q2_resources",
+      "count": 5000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "removed_provenance_rdfs",
+      "query": "Q3_missing_author",
+      "count": 52,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "removed_provenance_rdfs",
+      "query": "Q4_provenance",
+      "count": 0,
+      "same_global_answers": false,
+      "missing": 5000,
+      "extra": 0
+    },
+    {
+      "variant": "removed_provenance_rdfs",
+      "query": "Q5_text_resources",
+      "count": 2500,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "broken_hierarchy_rdfs",
+      "query": "Q1_topic_0",
+      "count": 834,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "broken_hierarchy_rdfs",
+      "query": "Q2_resources",
+      "count": 5000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "broken_hierarchy_rdfs",
+      "query": "Q3_missing_author",
+      "count": 52,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "broken_hierarchy_rdfs",
+      "query": "Q4_provenance",
+      "count": 5000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "broken_hierarchy_rdfs",
+      "query": "Q5_text_resources",
+      "count": 0,
+      "same_global_answers": false,
+      "missing": 2500,
+      "extra": 0
+    }
+  ],
+  "scope_checks": [
+    {
+      "query": "Q1_topic_0",
+      "selected_scope_equal": true,
+      "count": 834
+    },
+    {
+      "query": "Q2_resources",
+      "selected_scope_equal": true,
+      "count": 834
+    },
+    {
+      "query": "Q3_missing_author",
+      "selected_scope_equal": true,
+      "count": 8
+    },
+    {
+      "query": "Q4_provenance",
+      "selected_scope_equal": true,
+      "count": 834
+    },
+    {
+      "query": "Q5_text_resources",
+      "selected_scope_equal": true,
+      "count": 834
+    }
+  ],
+  "shacl": {
+    "full_rdfs": {
+      "conforms": false,
+      "violations": [
+        [
+          "https://example.org/learning/resource_00007",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00104",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00201",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00298",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00395",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00492",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00589",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00686",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00783",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00880",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00977",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01074",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01171",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01268",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01365",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01462",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01559",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01656",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01753",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01850",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01947",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02044",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02141",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02238",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02335",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02432",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02529",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02626",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02723",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02820",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02917",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03014",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03111",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03208",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03305",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03402",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03499",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03596",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03693",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03790",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03887",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03984",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04081",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04178",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04275",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04372",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04469",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04566",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04663",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04760",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04857",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04954",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ]
+      ]
+    },
+    "gzip_restored_rdfs": {
+      "conforms": false,
+      "violations": [
+        [
+          "https://example.org/learning/resource_00007",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00104",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00201",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00298",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00395",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00492",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00589",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00686",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00783",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00880",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00977",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01074",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01171",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01268",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01365",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01462",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01559",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01656",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01753",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01850",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01947",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02044",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02141",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02238",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02335",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02432",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02529",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02626",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02723",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02820",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02917",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03014",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03111",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03208",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03305",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03402",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03499",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03596",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03693",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03790",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03887",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03984",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04081",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04178",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04275",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04372",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04469",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04566",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04663",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04760",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04857",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04954",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ]
+      ]
+    },
+    "selective_types": {
+      "conforms": false,
+      "violations": [
+        [
+          "https://example.org/learning/resource_00007",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00104",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00201",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00298",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00395",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00492",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00589",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00686",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00783",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00880",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00977",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01074",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01171",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01268",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01365",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01462",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01559",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01656",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01753",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01850",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01947",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02044",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02141",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02238",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02335",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02432",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02529",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02626",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02723",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02820",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02917",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03014",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03111",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03208",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03305",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03402",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03499",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03596",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03693",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03790",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03887",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03984",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04081",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04178",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04275",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04372",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04469",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04566",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04663",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04760",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04857",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04954",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ]
+      ]
+    },
+    "topic_0_rdfs": {
+      "conforms": false,
+      "violations": [
+        [
+          "https://example.org/learning/resource_00492",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01074",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_01656",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02238",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_02820",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03402",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_03984",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_04566",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ]
+      ]
+    }
+  },
+  "warm_query_ms": {
+    "full_rdfs": {
+      "Q1_topic_0": [
+        9.68637497862801,
+        10.276916000293568,
+        8.806291996734217
+      ],
+      "Q2_resources": [
+        51.12041599932127,
+        50.9626250131987,
+        51.709082996239886
+      ],
+      "Q3_missing_author": [
+        202.90641600149684,
+        199.87879201653413,
+        201.54941600048915
+      ],
+      "Q4_provenance": [
+        130.1451250037644,
+        130.20166600472294,
+        146.3751669798512
+      ],
+      "Q5_text_resources": [
+        28.37570899282582,
+        25.09262500097975,
+        27.075791003881022
+      ]
+    },
+    "topic_0_rdfs": {
+      "Q1_topic_0": [
+        8.55270799365826,
+        8.777874987572432,
+        9.027125022839755
+      ],
+      "Q2_resources": [
+        8.345500013092533,
+        8.480125019559637,
+        8.879208995494992
+      ],
+      "Q3_missing_author": [
+        33.64416700787842,
+        33.53237500414252,
+        32.86541698616929
+      ],
+      "Q4_provenance": [
+        22.68529200227931,
+        21.319374995073304,
+        21.865874994546175
+      ],
+      "Q5_text_resources": [
+        8.404042018810287,
+        8.33329200395383,
+        8.760583004914224
+      ]
+    },
+    "selective_types": {
+      "Q1_topic_0": [
+        8.51062498986721,
+        8.0547500110697,
+        8.799915987765417
+      ],
+      "Q2_resources": [
+        54.2021669971291,
+        52.22966699511744,
+        52.23945798934437
+      ],
+      "Q3_missing_author": [
+        201.84579197666608,
+        200.0477499968838,
+        198.7850829900708
+      ],
+      "Q4_provenance": [
+        133.1879170029424,
+        130.41766700916924,
+        129.0717920055613
+      ],
+      "Q5_text_resources": [
+        25.957167003070936,
+        25.906625000061467,
+        24.99345800606534
+      ]
+    }
+  },
+  "repeats": 3,
+  "environment": {
+    "python": "3.12.14",
+    "system": "Darwin",
+    "architecture": "arm64",
+    "packages": {
+      "rdflib": "7.1.4",
+      "owlrl": "7.1.4",
+      "pyshacl": "0.30.1"
+    }
+  },
+  "limits": [
+    "Synthetic structured data; not a production or million-document benchmark.",
+    "In-memory RDFLib store; file bytes are not database or heap measurements.",
+    "RDFS closure, not full OWL DL or an EL/QL/RL profile conversion.",
+    "Subset extraction is explicit ABox scope selection, not a formal TBox module extractor.",
+    "Selective type materialisation preserves only the registered workload tested here.",
+    "Warm timings include full result enumeration; exclude loading, query preparation and closure.",
+    "gzip must be decompressed before RDFLib parsing; no direct compressed query claim."
+  ]
+}

@@ -1,0 +1,2 @@
+PREFIX ex: <https://example.org/learning/>
+SELECT DISTINCT ?r WHERE { ?r ex:coversTopic ex:topic_0 }

@@ -1,0 +1,606 @@
+{
+  "records": 1000,
+  "physical_csv_rows": 1059,
+  "duplicate_rows": 59,
+  "schema_triples": 19,
+  "explicit_triples_with_schema": 6034,
+  "rdfs_triples": 12641,
+  "selected_records": 167,
+  "partial_explicit_triples": 1031,
+  "partial_rdfs_triples": 2263,
+  "selective_type_triples": 7534,
+  "storage": [
+    {
+      "format": "nt",
+      "file": "graph.nt",
+      "bytes": 790783,
+      "graph_equal": true
+    },
+    {
+      "format": "turtle",
+      "file": "graph.ttl",
+      "bytes": 225883,
+      "graph_equal": true
+    },
+    {
+      "format": "xml",
+      "file": "graph.rdf",
+      "bytes": 641569,
+      "graph_equal": true
+    },
+    {
+      "format": "turtle+gzip",
+      "file": "graph.ttl.gz",
+      "bytes": 16488,
+      "graph_equal": true
+    }
+  ],
+  "closure_ms": {
+    "full": 1343.7697080080397,
+    "partial": 145.46974998665974
+  },
+  "answer_checks": [
+    {
+      "variant": "full_rdfs",
+      "query": "Q1_topic_0",
+      "count": 167,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "full_rdfs",
+      "query": "Q2_resources",
+      "count": 1000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "full_rdfs",
+      "query": "Q3_missing_author",
+      "count": 11,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "full_rdfs",
+      "query": "Q4_provenance",
+      "count": 1000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "full_rdfs",
+      "query": "Q5_text_resources",
+      "count": 500,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "gzip_restored_rdfs",
+      "query": "Q1_topic_0",
+      "count": 167,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "gzip_restored_rdfs",
+      "query": "Q2_resources",
+      "count": 1000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "gzip_restored_rdfs",
+      "query": "Q3_missing_author",
+      "count": 11,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "gzip_restored_rdfs",
+      "query": "Q4_provenance",
+      "count": 1000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "gzip_restored_rdfs",
+      "query": "Q5_text_resources",
+      "count": 500,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "topic_0_rdfs",
+      "query": "Q1_topic_0",
+      "count": 167,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "topic_0_rdfs",
+      "query": "Q2_resources",
+      "count": 167,
+      "same_global_answers": false,
+      "missing": 833,
+      "extra": 0
+    },
+    {
+      "variant": "topic_0_rdfs",
+      "query": "Q3_missing_author",
+      "count": 1,
+      "same_global_answers": false,
+      "missing": 10,
+      "extra": 0
+    },
+    {
+      "variant": "topic_0_rdfs",
+      "query": "Q4_provenance",
+      "count": 167,
+      "same_global_answers": false,
+      "missing": 833,
+      "extra": 0
+    },
+    {
+      "variant": "topic_0_rdfs",
+      "query": "Q5_text_resources",
+      "count": 167,
+      "same_global_answers": false,
+      "missing": 333,
+      "extra": 0
+    },
+    {
+      "variant": "selective_types",
+      "query": "Q1_topic_0",
+      "count": 167,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "selective_types",
+      "query": "Q2_resources",
+      "count": 1000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "selective_types",
+      "query": "Q3_missing_author",
+      "count": 11,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "selective_types",
+      "query": "Q4_provenance",
+      "count": 1000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "selective_types",
+      "query": "Q5_text_resources",
+      "count": 500,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "removed_provenance_rdfs",
+      "query": "Q1_topic_0",
+      "count": 167,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "removed_provenance_rdfs",
+      "query": "Q2_resources",
+      "count": 1000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "removed_provenance_rdfs",
+      "query": "Q3_missing_author",
+      "count": 11,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "removed_provenance_rdfs",
+      "query": "Q4_provenance",
+      "count": 0,
+      "same_global_answers": false,
+      "missing": 1000,
+      "extra": 0
+    },
+    {
+      "variant": "removed_provenance_rdfs",
+      "query": "Q5_text_resources",
+      "count": 500,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "broken_hierarchy_rdfs",
+      "query": "Q1_topic_0",
+      "count": 167,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "broken_hierarchy_rdfs",
+      "query": "Q2_resources",
+      "count": 1000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "broken_hierarchy_rdfs",
+      "query": "Q3_missing_author",
+      "count": 11,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "broken_hierarchy_rdfs",
+      "query": "Q4_provenance",
+      "count": 1000,
+      "same_global_answers": true,
+      "missing": 0,
+      "extra": 0
+    },
+    {
+      "variant": "broken_hierarchy_rdfs",
+      "query": "Q5_text_resources",
+      "count": 0,
+      "same_global_answers": false,
+      "missing": 500,
+      "extra": 0
+    }
+  ],
+  "scope_checks": [
+    {
+      "query": "Q1_topic_0",
+      "selected_scope_equal": true,
+      "count": 167
+    },
+    {
+      "query": "Q2_resources",
+      "selected_scope_equal": true,
+      "count": 167
+    },
+    {
+      "query": "Q3_missing_author",
+      "selected_scope_equal": true,
+      "count": 1
+    },
+    {
+      "query": "Q4_provenance",
+      "selected_scope_equal": true,
+      "count": 167
+    },
+    {
+      "query": "Q5_text_resources",
+      "selected_scope_equal": true,
+      "count": 167
+    }
+  ],
+  "shacl": {
+    "full_rdfs": {
+      "conforms": false,
+      "violations": [
+        [
+          "https://example.org/learning/resource_00007",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00104",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00201",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00298",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00395",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00492",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00589",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00686",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00783",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00880",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00977",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ]
+      ]
+    },
+    "gzip_restored_rdfs": {
+      "conforms": false,
+      "violations": [
+        [
+          "https://example.org/learning/resource_00007",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00104",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00201",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00298",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00395",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00492",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00589",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00686",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00783",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00880",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00977",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ]
+      ]
+    },
+    "selective_types": {
+      "conforms": false,
+      "violations": [
+        [
+          "https://example.org/learning/resource_00007",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00104",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00201",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00298",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00395",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00492",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00589",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00686",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00783",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00880",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ],
+        [
+          "https://example.org/learning/resource_00977",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ]
+      ]
+    },
+    "topic_0_rdfs": {
+      "conforms": false,
+      "violations": [
+        [
+          "https://example.org/learning/resource_00492",
+          "https://example.org/learning/authoredBy",
+          "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+        ]
+      ]
+    }
+  },
+  "warm_query_ms": {
+    "full_rdfs": {
+      "Q1_topic_0": [
+        1.8172919808421284,
+        1.6237919917330146,
+        1.6937500040512532
+      ],
+      "Q2_resources": [
+        9.596124989911914,
+        9.484084002906457,
+        10.104707995196804
+      ],
+      "Q3_missing_author": [
+        39.68724998412654,
+        39.76437498931773,
+        39.03662497759797
+      ],
+      "Q4_provenance": [
+        25.53941699443385,
+        25.95404098974541,
+        25.963749998481944
+      ],
+      "Q5_text_resources": [
+        5.334582994692028,
+        4.701249999925494,
+        4.934625001624227
+      ]
+    },
+    "topic_0_rdfs": {
+      "Q1_topic_0": [
+        1.6659170214552432,
+        1.5933339891489595,
+        1.7157919937744737
+      ],
+      "Q2_resources": [
+        1.6462909989058971,
+        1.5710419975221157,
+        1.6827500076033175
+      ],
+      "Q3_missing_author": [
+        6.77025000914,
+        6.83883301098831,
+        6.713707989547402
+      ],
+      "Q4_provenance": [
+        4.364291991805658,
+        4.388667002785951,
+        4.164542013313621
+      ],
+      "Q5_text_resources": [
+        1.6105830145534128,
+        1.6582919924985617,
+        1.6222499834839255
+      ]
+    },
+    "selective_types": {
+      "Q1_topic_0": [
+        1.5912090020719916,
+        1.693208992946893,
+        1.5978339943103492
+      ],
+      "Q2_resources": [
+        9.707749995868653,
+        9.523082990199327,
+        9.388875012518838
+      ],
+      "Q3_missing_author": [
+        38.68504101410508,
+        39.36733299633488,
+        39.499334001448005
+      ],
+      "Q4_provenance": [
+        25.427249987842515,
+        25.80354199744761,
+        61.12908400245942
+      ],
+      "Q5_text_resources": [
+        4.855166014749557,
+        4.700666991993785,
+        4.84908401267603
+      ]
+    }
+  },
+  "repeats": 3,
+  "environment": {
+    "python": "3.12.14",
+    "system": "Darwin",
+    "architecture": "arm64",
+    "packages": {
+      "rdflib": "7.1.4",
+      "owlrl": "7.1.4",
+      "pyshacl": "0.30.1"
+    }
+  },
+  "limits": [
+    "Synthetic structured data; not a production or million-document benchmark.",
+    "In-memory RDFLib store; file bytes are not database or heap measurements.",
+    "RDFS closure, not full OWL DL or an EL/QL/RL profile conversion.",
+    "Subset extraction is explicit ABox scope selection, not a formal TBox module extractor.",
+    "Selective type materialisation preserves only the registered workload tested here.",
+    "Warm timings include full result enumeration; exclude loading, query preparation and closure.",
+    "gzip must be decompressed before RDFLib parsing; no direct compressed query claim."
+  ]
+}

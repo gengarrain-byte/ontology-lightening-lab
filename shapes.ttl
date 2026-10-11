@@ -1,0 +1,9 @@
+@prefix ex: <https://example.org/learning/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+ex:ResourceShape a sh:NodeShape ;
+    sh:targetClass ex:LearningResource ;
+    sh:property [ sh:path ex:authoredBy ; sh:minCount 1 ] ;
+    sh:property [ sh:path dct:title ; sh:minCount 1 ] ;
+    sh:property [ sh:path ex:sourceRecord ; sh:minCount 1 ] .

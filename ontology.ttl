@@ -1,0 +1,16 @@
+@prefix ex: <https://example.org/learning/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:LearningResource a owl:Class .
+ex:TextResource a owl:Class ; rdfs:subClassOf ex:LearningResource .
+ex:Article a owl:Class ; rdfs:subClassOf ex:TextResource .
+ex:Course a owl:Class ; rdfs:subClassOf ex:LearningResource .
+ex:Person a owl:Class .
+ex:Topic a owl:Class .
+ex:SourceRecord a owl:Class .
+ex:authoredBy a rdf:Property ; rdfs:domain ex:LearningResource ; rdfs:range ex:Person .
+ex:coversTopic a rdf:Property ; rdfs:domain ex:LearningResource ; rdfs:range ex:Topic .
+ex:sourceRecord a rdf:Property ; rdfs:range ex:SourceRecord .
+ex:row a rdf:Property .

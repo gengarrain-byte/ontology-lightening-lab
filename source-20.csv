@@ -1,0 +1,23 @@
+id,kind,title,author,topic
+resource_00000,Article,"Same title, distinct resources",person_00,topic_0
+resource_00000,Article,"Same title, distinct resources",person_00,topic_0
+resource_00001,Course,"Same title, distinct resources",person_01,topic_1
+resource_00002,Article,Learning material 2,person_02,topic_2
+resource_00003,Course,Learning material 3,person_03,topic_3
+resource_00004,Article,Learning material 4,person_04,topic_4
+resource_00005,Course,Learning material 5,person_05,topic_5
+resource_00006,Article,Learning material 6,person_06,topic_0
+resource_00007,Course,Learning material 7,,topic_1
+resource_00008,Article,Learning material 8,person_08,topic_2
+resource_00009,Course,Learning material 9,person_09,topic_3
+resource_00010,Article,Learning material 10,person_10,topic_4
+resource_00011,Course,Learning material 11,person_11,topic_5
+resource_00012,Article,Learning material 12,person_12,topic_0
+resource_00013,Course,Learning material 13,person_13,topic_1
+resource_00014,Article,Learning material 14,person_14,topic_2
+resource_00015,Course,Learning material 15,person_15,topic_3
+resource_00016,Article,Learning material 16,person_16,topic_4
+resource_00017,Course,Learning material 17,person_17,topic_5
+resource_00017,Course,Learning material 17,person_17,topic_5
+resource_00018,Article,Learning material 18,person_18,topic_0
+resource_00019,Course,Learning material 19,person_19,topic_1

@@ -1,0 +1,1394 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <https://example.org/learning/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Course a owl:Class ;
+    rdfs:subClassOf ex:LearningResource .
+
+ex:authoredBy a rdf:Property ;
+    rdfs:domain ex:LearningResource ;
+    rdfs:range ex:Person .
+
+ex:coversTopic a rdf:Property ;
+    rdfs:domain ex:LearningResource ;
+    rdfs:range ex:Topic .
+
+ex:resource_00000 a ex:Article ;
+    dcterms:title "Same title, distinct resources" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00000 .
+
+ex:resource_00006 a ex:Article ;
+    dcterms:title "Learning material 6" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00006 .
+
+ex:resource_00012 a ex:Article ;
+    dcterms:title "Learning material 12" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00012 .
+
+ex:resource_00018 a ex:Article ;
+    dcterms:title "Learning material 18" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00018 .
+
+ex:resource_00024 a ex:Article ;
+    dcterms:title "Learning material 24" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00024 .
+
+ex:resource_00030 a ex:Article ;
+    dcterms:title "Learning material 30" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00030 .
+
+ex:resource_00036 a ex:Article ;
+    dcterms:title "Learning material 36" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00036 .
+
+ex:resource_00042 a ex:Article ;
+    dcterms:title "Learning material 42" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00042 .
+
+ex:resource_00048 a ex:Article ;
+    dcterms:title "Learning material 48" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00048 .
+
+ex:resource_00054 a ex:Article ;
+    dcterms:title "Learning material 54" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00054 .
+
+ex:resource_00060 a ex:Article ;
+    dcterms:title "Learning material 60" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00060 .
+
+ex:resource_00066 a ex:Article ;
+    dcterms:title "Learning material 66" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00066 .
+
+ex:resource_00072 a ex:Article ;
+    dcterms:title "Learning material 72" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00072 .
+
+ex:resource_00078 a ex:Article ;
+    dcterms:title "Learning material 78" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00078 .
+
+ex:resource_00084 a ex:Article ;
+    dcterms:title "Learning material 84" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00084 .
+
+ex:resource_00090 a ex:Article ;
+    dcterms:title "Learning material 90" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00090 .
+
+ex:resource_00096 a ex:Article ;
+    dcterms:title "Learning material 96" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00096 .
+
+ex:resource_00102 a ex:Article ;
+    dcterms:title "Learning material 102" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00102 .
+
+ex:resource_00108 a ex:Article ;
+    dcterms:title "Learning material 108" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00108 .
+
+ex:resource_00114 a ex:Article ;
+    dcterms:title "Learning material 114" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00114 .
+
+ex:resource_00120 a ex:Article ;
+    dcterms:title "Learning material 120" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00120 .
+
+ex:resource_00126 a ex:Article ;
+    dcterms:title "Learning material 126" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00126 .
+
+ex:resource_00132 a ex:Article ;
+    dcterms:title "Learning material 132" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00132 .
+
+ex:resource_00138 a ex:Article ;
+    dcterms:title "Learning material 138" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00138 .
+
+ex:resource_00144 a ex:Article ;
+    dcterms:title "Learning material 144" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00144 .
+
+ex:resource_00150 a ex:Article ;
+    dcterms:title "Learning material 150" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00150 .
+
+ex:resource_00156 a ex:Article ;
+    dcterms:title "Learning material 156" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00156 .
+
+ex:resource_00162 a ex:Article ;
+    dcterms:title "Learning material 162" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00162 .
+
+ex:resource_00168 a ex:Article ;
+    dcterms:title "Learning material 168" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00168 .
+
+ex:resource_00174 a ex:Article ;
+    dcterms:title "Learning material 174" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00174 .
+
+ex:resource_00180 a ex:Article ;
+    dcterms:title "Learning material 180" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00180 .
+
+ex:resource_00186 a ex:Article ;
+    dcterms:title "Learning material 186" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00186 .
+
+ex:resource_00192 a ex:Article ;
+    dcterms:title "Learning material 192" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00192 .
+
+ex:resource_00198 a ex:Article ;
+    dcterms:title "Learning material 198" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00198 .
+
+ex:resource_00204 a ex:Article ;
+    dcterms:title "Learning material 204" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00204 .
+
+ex:resource_00210 a ex:Article ;
+    dcterms:title "Learning material 210" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00210 .
+
+ex:resource_00216 a ex:Article ;
+    dcterms:title "Learning material 216" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00216 .
+
+ex:resource_00222 a ex:Article ;
+    dcterms:title "Learning material 222" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00222 .
+
+ex:resource_00228 a ex:Article ;
+    dcterms:title "Learning material 228" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00228 .
+
+ex:resource_00234 a ex:Article ;
+    dcterms:title "Learning material 234" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00234 .
+
+ex:resource_00240 a ex:Article ;
+    dcterms:title "Learning material 240" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00240 .
+
+ex:resource_00246 a ex:Article ;
+    dcterms:title "Learning material 246" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00246 .
+
+ex:resource_00252 a ex:Article ;
+    dcterms:title "Learning material 252" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00252 .
+
+ex:resource_00258 a ex:Article ;
+    dcterms:title "Learning material 258" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00258 .
+
+ex:resource_00264 a ex:Article ;
+    dcterms:title "Learning material 264" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00264 .
+
+ex:resource_00270 a ex:Article ;
+    dcterms:title "Learning material 270" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00270 .
+
+ex:resource_00276 a ex:Article ;
+    dcterms:title "Learning material 276" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00276 .
+
+ex:resource_00282 a ex:Article ;
+    dcterms:title "Learning material 282" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00282 .
+
+ex:resource_00288 a ex:Article ;
+    dcterms:title "Learning material 288" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00288 .
+
+ex:resource_00294 a ex:Article ;
+    dcterms:title "Learning material 294" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00294 .
+
+ex:resource_00300 a ex:Article ;
+    dcterms:title "Learning material 300" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00300 .
+
+ex:resource_00306 a ex:Article ;
+    dcterms:title "Learning material 306" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00306 .
+
+ex:resource_00312 a ex:Article ;
+    dcterms:title "Learning material 312" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00312 .
+
+ex:resource_00318 a ex:Article ;
+    dcterms:title "Learning material 318" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00318 .
+
+ex:resource_00324 a ex:Article ;
+    dcterms:title "Learning material 324" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00324 .
+
+ex:resource_00330 a ex:Article ;
+    dcterms:title "Learning material 330" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00330 .
+
+ex:resource_00336 a ex:Article ;
+    dcterms:title "Learning material 336" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00336 .
+
+ex:resource_00342 a ex:Article ;
+    dcterms:title "Learning material 342" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00342 .
+
+ex:resource_00348 a ex:Article ;
+    dcterms:title "Learning material 348" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00348 .
+
+ex:resource_00354 a ex:Article ;
+    dcterms:title "Learning material 354" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00354 .
+
+ex:resource_00360 a ex:Article ;
+    dcterms:title "Learning material 360" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00360 .
+
+ex:resource_00366 a ex:Article ;
+    dcterms:title "Learning material 366" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00366 .
+
+ex:resource_00372 a ex:Article ;
+    dcterms:title "Learning material 372" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00372 .
+
+ex:resource_00378 a ex:Article ;
+    dcterms:title "Learning material 378" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00378 .
+
+ex:resource_00384 a ex:Article ;
+    dcterms:title "Learning material 384" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00384 .
+
+ex:resource_00390 a ex:Article ;
+    dcterms:title "Learning material 390" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00390 .
+
+ex:resource_00396 a ex:Article ;
+    dcterms:title "Learning material 396" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00396 .
+
+ex:resource_00402 a ex:Article ;
+    dcterms:title "Learning material 402" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00402 .
+
+ex:resource_00408 a ex:Article ;
+    dcterms:title "Learning material 408" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00408 .
+
+ex:resource_00414 a ex:Article ;
+    dcterms:title "Learning material 414" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00414 .
+
+ex:resource_00420 a ex:Article ;
+    dcterms:title "Learning material 420" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00420 .
+
+ex:resource_00426 a ex:Article ;
+    dcterms:title "Learning material 426" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00426 .
+
+ex:resource_00432 a ex:Article ;
+    dcterms:title "Learning material 432" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00432 .
+
+ex:resource_00438 a ex:Article ;
+    dcterms:title "Learning material 438" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00438 .
+
+ex:resource_00444 a ex:Article ;
+    dcterms:title "Learning material 444" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00444 .
+
+ex:resource_00450 a ex:Article ;
+    dcterms:title "Learning material 450" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00450 .
+
+ex:resource_00456 a ex:Article ;
+    dcterms:title "Learning material 456" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00456 .
+
+ex:resource_00462 a ex:Article ;
+    dcterms:title "Learning material 462" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00462 .
+
+ex:resource_00468 a ex:Article ;
+    dcterms:title "Learning material 468" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00468 .
+
+ex:resource_00474 a ex:Article ;
+    dcterms:title "Learning material 474" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00474 .
+
+ex:resource_00480 a ex:Article ;
+    dcterms:title "Learning material 480" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00480 .
+
+ex:resource_00486 a ex:Article ;
+    dcterms:title "Learning material 486" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00486 .
+
+ex:resource_00492 a ex:Article ;
+    dcterms:title "Learning material 492" ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00492 .
+
+ex:resource_00498 a ex:Article ;
+    dcterms:title "Learning material 498" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00498 .
+
+ex:resource_00504 a ex:Article ;
+    dcterms:title "Learning material 504" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00504 .
+
+ex:resource_00510 a ex:Article ;
+    dcterms:title "Learning material 510" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00510 .
+
+ex:resource_00516 a ex:Article ;
+    dcterms:title "Learning material 516" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00516 .
+
+ex:resource_00522 a ex:Article ;
+    dcterms:title "Learning material 522" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00522 .
+
+ex:resource_00528 a ex:Article ;
+    dcterms:title "Learning material 528" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00528 .
+
+ex:resource_00534 a ex:Article ;
+    dcterms:title "Learning material 534" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00534 .
+
+ex:resource_00540 a ex:Article ;
+    dcterms:title "Learning material 540" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00540 .
+
+ex:resource_00546 a ex:Article ;
+    dcterms:title "Learning material 546" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00546 .
+
+ex:resource_00552 a ex:Article ;
+    dcterms:title "Learning material 552" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00552 .
+
+ex:resource_00558 a ex:Article ;
+    dcterms:title "Learning material 558" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00558 .
+
+ex:resource_00564 a ex:Article ;
+    dcterms:title "Learning material 564" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00564 .
+
+ex:resource_00570 a ex:Article ;
+    dcterms:title "Learning material 570" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00570 .
+
+ex:resource_00576 a ex:Article ;
+    dcterms:title "Learning material 576" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00576 .
+
+ex:resource_00582 a ex:Article ;
+    dcterms:title "Learning material 582" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00582 .
+
+ex:resource_00588 a ex:Article ;
+    dcterms:title "Learning material 588" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00588 .
+
+ex:resource_00594 a ex:Article ;
+    dcterms:title "Learning material 594" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00594 .
+
+ex:resource_00600 a ex:Article ;
+    dcterms:title "Learning material 600" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00600 .
+
+ex:resource_00606 a ex:Article ;
+    dcterms:title "Learning material 606" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00606 .
+
+ex:resource_00612 a ex:Article ;
+    dcterms:title "Learning material 612" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00612 .
+
+ex:resource_00618 a ex:Article ;
+    dcterms:title "Learning material 618" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00618 .
+
+ex:resource_00624 a ex:Article ;
+    dcterms:title "Learning material 624" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00624 .
+
+ex:resource_00630 a ex:Article ;
+    dcterms:title "Learning material 630" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00630 .
+
+ex:resource_00636 a ex:Article ;
+    dcterms:title "Learning material 636" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00636 .
+
+ex:resource_00642 a ex:Article ;
+    dcterms:title "Learning material 642" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00642 .
+
+ex:resource_00648 a ex:Article ;
+    dcterms:title "Learning material 648" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00648 .
+
+ex:resource_00654 a ex:Article ;
+    dcterms:title "Learning material 654" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00654 .
+
+ex:resource_00660 a ex:Article ;
+    dcterms:title "Learning material 660" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00660 .
+
+ex:resource_00666 a ex:Article ;
+    dcterms:title "Learning material 666" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00666 .
+
+ex:resource_00672 a ex:Article ;
+    dcterms:title "Learning material 672" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00672 .
+
+ex:resource_00678 a ex:Article ;
+    dcterms:title "Learning material 678" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00678 .
+
+ex:resource_00684 a ex:Article ;
+    dcterms:title "Learning material 684" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00684 .
+
+ex:resource_00690 a ex:Article ;
+    dcterms:title "Learning material 690" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00690 .
+
+ex:resource_00696 a ex:Article ;
+    dcterms:title "Learning material 696" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00696 .
+
+ex:resource_00702 a ex:Article ;
+    dcterms:title "Learning material 702" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00702 .
+
+ex:resource_00708 a ex:Article ;
+    dcterms:title "Learning material 708" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00708 .
+
+ex:resource_00714 a ex:Article ;
+    dcterms:title "Learning material 714" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00714 .
+
+ex:resource_00720 a ex:Article ;
+    dcterms:title "Learning material 720" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00720 .
+
+ex:resource_00726 a ex:Article ;
+    dcterms:title "Learning material 726" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00726 .
+
+ex:resource_00732 a ex:Article ;
+    dcterms:title "Learning material 732" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00732 .
+
+ex:resource_00738 a ex:Article ;
+    dcterms:title "Learning material 738" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00738 .
+
+ex:resource_00744 a ex:Article ;
+    dcterms:title "Learning material 744" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00744 .
+
+ex:resource_00750 a ex:Article ;
+    dcterms:title "Learning material 750" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00750 .
+
+ex:resource_00756 a ex:Article ;
+    dcterms:title "Learning material 756" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00756 .
+
+ex:resource_00762 a ex:Article ;
+    dcterms:title "Learning material 762" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00762 .
+
+ex:resource_00768 a ex:Article ;
+    dcterms:title "Learning material 768" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00768 .
+
+ex:resource_00774 a ex:Article ;
+    dcterms:title "Learning material 774" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00774 .
+
+ex:resource_00780 a ex:Article ;
+    dcterms:title "Learning material 780" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00780 .
+
+ex:resource_00786 a ex:Article ;
+    dcterms:title "Learning material 786" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00786 .
+
+ex:resource_00792 a ex:Article ;
+    dcterms:title "Learning material 792" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00792 .
+
+ex:resource_00798 a ex:Article ;
+    dcterms:title "Learning material 798" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00798 .
+
+ex:resource_00804 a ex:Article ;
+    dcterms:title "Learning material 804" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00804 .
+
+ex:resource_00810 a ex:Article ;
+    dcterms:title "Learning material 810" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00810 .
+
+ex:resource_00816 a ex:Article ;
+    dcterms:title "Learning material 816" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00816 .
+
+ex:resource_00822 a ex:Article ;
+    dcterms:title "Learning material 822" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00822 .
+
+ex:resource_00828 a ex:Article ;
+    dcterms:title "Learning material 828" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00828 .
+
+ex:resource_00834 a ex:Article ;
+    dcterms:title "Learning material 834" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00834 .
+
+ex:resource_00840 a ex:Article ;
+    dcterms:title "Learning material 840" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00840 .
+
+ex:resource_00846 a ex:Article ;
+    dcterms:title "Learning material 846" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00846 .
+
+ex:resource_00852 a ex:Article ;
+    dcterms:title "Learning material 852" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00852 .
+
+ex:resource_00858 a ex:Article ;
+    dcterms:title "Learning material 858" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00858 .
+
+ex:resource_00864 a ex:Article ;
+    dcterms:title "Learning material 864" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00864 .
+
+ex:resource_00870 a ex:Article ;
+    dcterms:title "Learning material 870" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00870 .
+
+ex:resource_00876 a ex:Article ;
+    dcterms:title "Learning material 876" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00876 .
+
+ex:resource_00882 a ex:Article ;
+    dcterms:title "Learning material 882" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00882 .
+
+ex:resource_00888 a ex:Article ;
+    dcterms:title "Learning material 888" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00888 .
+
+ex:resource_00894 a ex:Article ;
+    dcterms:title "Learning material 894" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00894 .
+
+ex:resource_00900 a ex:Article ;
+    dcterms:title "Learning material 900" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00900 .
+
+ex:resource_00906 a ex:Article ;
+    dcterms:title "Learning material 906" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00906 .
+
+ex:resource_00912 a ex:Article ;
+    dcterms:title "Learning material 912" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00912 .
+
+ex:resource_00918 a ex:Article ;
+    dcterms:title "Learning material 918" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00918 .
+
+ex:resource_00924 a ex:Article ;
+    dcterms:title "Learning material 924" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00924 .
+
+ex:resource_00930 a ex:Article ;
+    dcterms:title "Learning material 930" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00930 .
+
+ex:resource_00936 a ex:Article ;
+    dcterms:title "Learning material 936" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00936 .
+
+ex:resource_00942 a ex:Article ;
+    dcterms:title "Learning material 942" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00942 .
+
+ex:resource_00948 a ex:Article ;
+    dcterms:title "Learning material 948" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00948 .
+
+ex:resource_00954 a ex:Article ;
+    dcterms:title "Learning material 954" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00954 .
+
+ex:resource_00960 a ex:Article ;
+    dcterms:title "Learning material 960" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00960 .
+
+ex:resource_00966 a ex:Article ;
+    dcterms:title "Learning material 966" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00966 .
+
+ex:resource_00972 a ex:Article ;
+    dcterms:title "Learning material 972" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00972 .
+
+ex:resource_00978 a ex:Article ;
+    dcterms:title "Learning material 978" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00978 .
+
+ex:resource_00984 a ex:Article ;
+    dcterms:title "Learning material 984" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00984 .
+
+ex:resource_00990 a ex:Article ;
+    dcterms:title "Learning material 990" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00990 .
+
+ex:resource_00996 a ex:Article ;
+    dcterms:title "Learning material 996" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00996 .
+
+ex:row a rdf:Property .
+
+ex:sourceRecord a rdf:Property ;
+    rdfs:range ex:SourceRecord .
+
+ex:Person a owl:Class .
+
+ex:SourceRecord a owl:Class .
+
+ex:TextResource a owl:Class ;
+    rdfs:subClassOf ex:LearningResource .
+
+ex:Topic a owl:Class .
+
+ex:source_resource_00000 ex:row 2 .
+
+ex:source_resource_00006 ex:row 9 .
+
+ex:source_resource_00012 ex:row 15 .
+
+ex:source_resource_00018 ex:row 22 .
+
+ex:source_resource_00024 ex:row 28 .
+
+ex:source_resource_00030 ex:row 34 .
+
+ex:source_resource_00036 ex:row 41 .
+
+ex:source_resource_00042 ex:row 47 .
+
+ex:source_resource_00048 ex:row 53 .
+
+ex:source_resource_00054 ex:row 60 .
+
+ex:source_resource_00060 ex:row 66 .
+
+ex:source_resource_00066 ex:row 72 .
+
+ex:source_resource_00072 ex:row 79 .
+
+ex:source_resource_00078 ex:row 85 .
+
+ex:source_resource_00084 ex:row 91 .
+
+ex:source_resource_00090 ex:row 98 .
+
+ex:source_resource_00096 ex:row 104 .
+
+ex:source_resource_00102 ex:row 110 .
+
+ex:source_resource_00108 ex:row 117 .
+
+ex:source_resource_00114 ex:row 123 .
+
+ex:source_resource_00120 ex:row 130 .
+
+ex:source_resource_00126 ex:row 136 .
+
+ex:source_resource_00132 ex:row 142 .
+
+ex:source_resource_00138 ex:row 149 .
+
+ex:source_resource_00144 ex:row 155 .
+
+ex:source_resource_00150 ex:row 161 .
+
+ex:source_resource_00156 ex:row 168 .
+
+ex:source_resource_00162 ex:row 174 .
+
+ex:source_resource_00168 ex:row 180 .
+
+ex:source_resource_00174 ex:row 187 .
+
+ex:source_resource_00180 ex:row 193 .
+
+ex:source_resource_00186 ex:row 199 .
+
+ex:source_resource_00192 ex:row 206 .
+
+ex:source_resource_00198 ex:row 212 .
+
+ex:source_resource_00204 ex:row 218 .
+
+ex:source_resource_00210 ex:row 225 .
+
+ex:source_resource_00216 ex:row 231 .
+
+ex:source_resource_00222 ex:row 238 .
+
+ex:source_resource_00228 ex:row 244 .
+
+ex:source_resource_00234 ex:row 250 .
+
+ex:source_resource_00240 ex:row 257 .
+
+ex:source_resource_00246 ex:row 263 .
+
+ex:source_resource_00252 ex:row 269 .
+
+ex:source_resource_00258 ex:row 276 .
+
+ex:source_resource_00264 ex:row 282 .
+
+ex:source_resource_00270 ex:row 288 .
+
+ex:source_resource_00276 ex:row 295 .
+
+ex:source_resource_00282 ex:row 301 .
+
+ex:source_resource_00288 ex:row 307 .
+
+ex:source_resource_00294 ex:row 314 .
+
+ex:source_resource_00300 ex:row 320 .
+
+ex:source_resource_00306 ex:row 326 .
+
+ex:source_resource_00312 ex:row 333 .
+
+ex:source_resource_00318 ex:row 339 .
+
+ex:source_resource_00324 ex:row 346 .
+
+ex:source_resource_00330 ex:row 352 .
+
+ex:source_resource_00336 ex:row 358 .
+
+ex:source_resource_00342 ex:row 365 .
+
+ex:source_resource_00348 ex:row 371 .
+
+ex:source_resource_00354 ex:row 377 .
+
+ex:source_resource_00360 ex:row 384 .
+
+ex:source_resource_00366 ex:row 390 .
+
+ex:source_resource_00372 ex:row 396 .
+
+ex:source_resource_00378 ex:row 403 .
+
+ex:source_resource_00384 ex:row 409 .
+
+ex:source_resource_00390 ex:row 415 .
+
+ex:source_resource_00396 ex:row 422 .
+
+ex:source_resource_00402 ex:row 428 .
+
+ex:source_resource_00408 ex:row 434 .
+
+ex:source_resource_00414 ex:row 441 .
+
+ex:source_resource_00420 ex:row 447 .
+
+ex:source_resource_00426 ex:row 454 .
+
+ex:source_resource_00432 ex:row 460 .
+
+ex:source_resource_00438 ex:row 466 .
+
+ex:source_resource_00444 ex:row 473 .
+
+ex:source_resource_00450 ex:row 479 .
+
+ex:source_resource_00456 ex:row 485 .
+
+ex:source_resource_00462 ex:row 492 .
+
+ex:source_resource_00468 ex:row 498 .
+
+ex:source_resource_00474 ex:row 504 .
+
+ex:source_resource_00480 ex:row 511 .
+
+ex:source_resource_00486 ex:row 517 .
+
+ex:source_resource_00492 ex:row 523 .
+
+ex:source_resource_00498 ex:row 530 .
+
+ex:source_resource_00504 ex:row 536 .
+
+ex:source_resource_00510 ex:row 542 .
+
+ex:source_resource_00516 ex:row 549 .
+
+ex:source_resource_00522 ex:row 555 .
+
+ex:source_resource_00528 ex:row 562 .
+
+ex:source_resource_00534 ex:row 568 .
+
+ex:source_resource_00540 ex:row 574 .
+
+ex:source_resource_00546 ex:row 581 .
+
+ex:source_resource_00552 ex:row 587 .
+
+ex:source_resource_00558 ex:row 593 .
+
+ex:source_resource_00564 ex:row 600 .
+
+ex:source_resource_00570 ex:row 606 .
+
+ex:source_resource_00576 ex:row 612 .
+
+ex:source_resource_00582 ex:row 619 .
+
+ex:source_resource_00588 ex:row 625 .
+
+ex:source_resource_00594 ex:row 631 .
+
+ex:source_resource_00600 ex:row 638 .
+
+ex:source_resource_00606 ex:row 644 .
+
+ex:source_resource_00612 ex:row 650 .
+
+ex:source_resource_00618 ex:row 657 .
+
+ex:source_resource_00624 ex:row 663 .
+
+ex:source_resource_00630 ex:row 670 .
+
+ex:source_resource_00636 ex:row 676 .
+
+ex:source_resource_00642 ex:row 682 .
+
+ex:source_resource_00648 ex:row 689 .
+
+ex:source_resource_00654 ex:row 695 .
+
+ex:source_resource_00660 ex:row 701 .
+
+ex:source_resource_00666 ex:row 708 .
+
+ex:source_resource_00672 ex:row 714 .
+
+ex:source_resource_00678 ex:row 720 .
+
+ex:source_resource_00684 ex:row 727 .
+
+ex:source_resource_00690 ex:row 733 .
+
+ex:source_resource_00696 ex:row 739 .
+
+ex:source_resource_00702 ex:row 746 .
+
+ex:source_resource_00708 ex:row 752 .
+
+ex:source_resource_00714 ex:row 758 .
+
+ex:source_resource_00720 ex:row 765 .
+
+ex:source_resource_00726 ex:row 771 .
+
+ex:source_resource_00732 ex:row 778 .
+
+ex:source_resource_00738 ex:row 784 .
+
+ex:source_resource_00744 ex:row 790 .
+
+ex:source_resource_00750 ex:row 797 .
+
+ex:source_resource_00756 ex:row 803 .
+
+ex:source_resource_00762 ex:row 809 .
+
+ex:source_resource_00768 ex:row 816 .
+
+ex:source_resource_00774 ex:row 822 .
+
+ex:source_resource_00780 ex:row 828 .
+
+ex:source_resource_00786 ex:row 835 .
+
+ex:source_resource_00792 ex:row 841 .
+
+ex:source_resource_00798 ex:row 847 .
+
+ex:source_resource_00804 ex:row 854 .
+
+ex:source_resource_00810 ex:row 860 .
+
+ex:source_resource_00816 ex:row 866 .
+
+ex:source_resource_00822 ex:row 873 .
+
+ex:source_resource_00828 ex:row 879 .
+
+ex:source_resource_00834 ex:row 886 .
+
+ex:source_resource_00840 ex:row 892 .
+
+ex:source_resource_00846 ex:row 898 .
+
+ex:source_resource_00852 ex:row 905 .
+
+ex:source_resource_00858 ex:row 911 .
+
+ex:source_resource_00864 ex:row 917 .
+
+ex:source_resource_00870 ex:row 924 .
+
+ex:source_resource_00876 ex:row 930 .
+
+ex:source_resource_00882 ex:row 936 .
+
+ex:source_resource_00888 ex:row 943 .
+
+ex:source_resource_00894 ex:row 949 .
+
+ex:source_resource_00900 ex:row 955 .
+
+ex:source_resource_00906 ex:row 962 .
+
+ex:source_resource_00912 ex:row 968 .
+
+ex:source_resource_00918 ex:row 974 .
+
+ex:source_resource_00924 ex:row 981 .
+
+ex:source_resource_00930 ex:row 987 .
+
+ex:source_resource_00936 ex:row 994 .
+
+ex:source_resource_00942 ex:row 1000 .
+
+ex:source_resource_00948 ex:row 1006 .
+
+ex:source_resource_00954 ex:row 1013 .
+
+ex:source_resource_00960 ex:row 1019 .
+
+ex:source_resource_00966 ex:row 1025 .
+
+ex:source_resource_00972 ex:row 1032 .
+
+ex:source_resource_00978 ex:row 1038 .
+
+ex:source_resource_00984 ex:row 1044 .
+
+ex:source_resource_00990 ex:row 1051 .
+
+ex:source_resource_00996 ex:row 1057 .
+
+ex:LearningResource a owl:Class .
+
+ex:person_02 dcterms:title "person_02" .
+
+ex:person_08 dcterms:title "person_08" .
+
+ex:person_12 dcterms:title "person_12" .
+
+ex:person_14 dcterms:title "person_14" .
+
+ex:person_00 dcterms:title "person_00" .
+
+ex:person_04 dcterms:title "person_04" .
+
+ex:person_06 dcterms:title "person_06" .
+
+ex:person_10 dcterms:title "person_10" .
+
+ex:person_16 dcterms:title "person_16" .
+
+ex:person_18 dcterms:title "person_18" .
+
+ex:Article a owl:Class ;
+    rdfs:subClassOf ex:TextResource .
+
+ex:topic_0 dcterms:title "Topic 0" .
+

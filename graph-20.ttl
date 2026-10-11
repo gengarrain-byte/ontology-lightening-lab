@@ -1,0 +1,246 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ex: <https://example.org/learning/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:authoredBy a rdf:Property ;
+    rdfs:domain ex:LearningResource ;
+    rdfs:range ex:Person .
+
+ex:coversTopic a rdf:Property ;
+    rdfs:domain ex:LearningResource ;
+    rdfs:range ex:Topic .
+
+ex:resource_00000 a ex:Article ;
+    dct:title "Same title, distinct resources" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00000 .
+
+ex:resource_00001 a ex:Course ;
+    dct:title "Same title, distinct resources" ;
+    ex:authoredBy ex:person_01 ;
+    ex:coversTopic ex:topic_1 ;
+    ex:sourceRecord ex:source_resource_00001 .
+
+ex:resource_00002 a ex:Article ;
+    dct:title "Learning material 2" ;
+    ex:authoredBy ex:person_02 ;
+    ex:coversTopic ex:topic_2 ;
+    ex:sourceRecord ex:source_resource_00002 .
+
+ex:resource_00003 a ex:Course ;
+    dct:title "Learning material 3" ;
+    ex:authoredBy ex:person_03 ;
+    ex:coversTopic ex:topic_3 ;
+    ex:sourceRecord ex:source_resource_00003 .
+
+ex:resource_00004 a ex:Article ;
+    dct:title "Learning material 4" ;
+    ex:authoredBy ex:person_04 ;
+    ex:coversTopic ex:topic_4 ;
+    ex:sourceRecord ex:source_resource_00004 .
+
+ex:resource_00005 a ex:Course ;
+    dct:title "Learning material 5" ;
+    ex:authoredBy ex:person_05 ;
+    ex:coversTopic ex:topic_5 ;
+    ex:sourceRecord ex:source_resource_00005 .
+
+ex:resource_00006 a ex:Article ;
+    dct:title "Learning material 6" ;
+    ex:authoredBy ex:person_06 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00006 .
+
+ex:resource_00007 a ex:Course ;
+    dct:title "Learning material 7" ;
+    ex:coversTopic ex:topic_1 ;
+    ex:sourceRecord ex:source_resource_00007 .
+
+ex:resource_00008 a ex:Article ;
+    dct:title "Learning material 8" ;
+    ex:authoredBy ex:person_08 ;
+    ex:coversTopic ex:topic_2 ;
+    ex:sourceRecord ex:source_resource_00008 .
+
+ex:resource_00009 a ex:Course ;
+    dct:title "Learning material 9" ;
+    ex:authoredBy ex:person_09 ;
+    ex:coversTopic ex:topic_3 ;
+    ex:sourceRecord ex:source_resource_00009 .
+
+ex:resource_00010 a ex:Article ;
+    dct:title "Learning material 10" ;
+    ex:authoredBy ex:person_10 ;
+    ex:coversTopic ex:topic_4 ;
+    ex:sourceRecord ex:source_resource_00010 .
+
+ex:resource_00011 a ex:Course ;
+    dct:title "Learning material 11" ;
+    ex:authoredBy ex:person_11 ;
+    ex:coversTopic ex:topic_5 ;
+    ex:sourceRecord ex:source_resource_00011 .
+
+ex:resource_00012 a ex:Article ;
+    dct:title "Learning material 12" ;
+    ex:authoredBy ex:person_12 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00012 .
+
+ex:resource_00013 a ex:Course ;
+    dct:title "Learning material 13" ;
+    ex:authoredBy ex:person_13 ;
+    ex:coversTopic ex:topic_1 ;
+    ex:sourceRecord ex:source_resource_00013 .
+
+ex:resource_00014 a ex:Article ;
+    dct:title "Learning material 14" ;
+    ex:authoredBy ex:person_14 ;
+    ex:coversTopic ex:topic_2 ;
+    ex:sourceRecord ex:source_resource_00014 .
+
+ex:resource_00015 a ex:Course ;
+    dct:title "Learning material 15" ;
+    ex:authoredBy ex:person_15 ;
+    ex:coversTopic ex:topic_3 ;
+    ex:sourceRecord ex:source_resource_00015 .
+
+ex:resource_00016 a ex:Article ;
+    dct:title "Learning material 16" ;
+    ex:authoredBy ex:person_16 ;
+    ex:coversTopic ex:topic_4 ;
+    ex:sourceRecord ex:source_resource_00016 .
+
+ex:resource_00017 a ex:Course ;
+    dct:title "Learning material 17" ;
+    ex:authoredBy ex:person_17 ;
+    ex:coversTopic ex:topic_5 ;
+    ex:sourceRecord ex:source_resource_00017 .
+
+ex:resource_00018 a ex:Article ;
+    dct:title "Learning material 18" ;
+    ex:authoredBy ex:person_18 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00018 .
+
+ex:resource_00019 a ex:Course ;
+    dct:title "Learning material 19" ;
+    ex:authoredBy ex:person_19 ;
+    ex:coversTopic ex:topic_1 ;
+    ex:sourceRecord ex:source_resource_00019 .
+
+ex:row a rdf:Property .
+
+ex:sourceRecord a rdf:Property ;
+    rdfs:range ex:SourceRecord .
+
+ex:Person a owl:Class .
+
+ex:SourceRecord a owl:Class .
+
+ex:TextResource a owl:Class ;
+    rdfs:subClassOf ex:LearningResource .
+
+ex:Topic a owl:Class .
+
+ex:person_00 dct:title "person_00" .
+
+ex:person_01 dct:title "person_01" .
+
+ex:person_02 dct:title "person_02" .
+
+ex:person_03 dct:title "person_03" .
+
+ex:person_04 dct:title "person_04" .
+
+ex:person_05 dct:title "person_05" .
+
+ex:person_06 dct:title "person_06" .
+
+ex:person_08 dct:title "person_08" .
+
+ex:person_09 dct:title "person_09" .
+
+ex:person_10 dct:title "person_10" .
+
+ex:person_11 dct:title "person_11" .
+
+ex:person_12 dct:title "person_12" .
+
+ex:person_13 dct:title "person_13" .
+
+ex:person_14 dct:title "person_14" .
+
+ex:person_15 dct:title "person_15" .
+
+ex:person_16 dct:title "person_16" .
+
+ex:person_17 dct:title "person_17" .
+
+ex:person_18 dct:title "person_18" .
+
+ex:person_19 dct:title "person_19" .
+
+ex:source_resource_00000 ex:row 2 .
+
+ex:source_resource_00001 ex:row 4 .
+
+ex:source_resource_00002 ex:row 5 .
+
+ex:source_resource_00003 ex:row 6 .
+
+ex:source_resource_00004 ex:row 7 .
+
+ex:source_resource_00005 ex:row 8 .
+
+ex:source_resource_00006 ex:row 9 .
+
+ex:source_resource_00007 ex:row 10 .
+
+ex:source_resource_00008 ex:row 11 .
+
+ex:source_resource_00009 ex:row 12 .
+
+ex:source_resource_00010 ex:row 13 .
+
+ex:source_resource_00011 ex:row 14 .
+
+ex:source_resource_00012 ex:row 15 .
+
+ex:source_resource_00013 ex:row 16 .
+
+ex:source_resource_00014 ex:row 17 .
+
+ex:source_resource_00015 ex:row 18 .
+
+ex:source_resource_00016 ex:row 19 .
+
+ex:source_resource_00017 ex:row 20 .
+
+ex:source_resource_00018 ex:row 22 .
+
+ex:source_resource_00019 ex:row 23 .
+
+ex:topic_2 dct:title "Topic 2" .
+
+ex:topic_3 dct:title "Topic 3" .
+
+ex:topic_4 dct:title "Topic 4" .
+
+ex:topic_5 dct:title "Topic 5" .
+
+ex:LearningResource a owl:Class .
+
+ex:topic_0 dct:title "Topic 0" .
+
+ex:topic_1 dct:title "Topic 1" .
+
+ex:Article a owl:Class ;
+    rdfs:subClassOf ex:TextResource .
+
+ex:Course a owl:Class ;
+    rdfs:subClassOf ex:LearningResource .
+

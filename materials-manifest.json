@@ -1,0 +1,125 @@
+{
+  "description": "Synthetic ontology study materials; hashes of all other repository bundle files.",
+  "files": [
+    {
+      "file": ".gitignore",
+      "bytes": 43,
+      "sha256": "ff4e7111b32c262c6612828b40a2786845ae79c6afb894eb2c81783cf395a7dc"
+    },
+    {
+      "file": "04-conversion.jpg",
+      "bytes": 83489,
+      "sha256": "469664a5e2fc04028223a4a1d1d0554f8fab42409ad0b2cbd4fb19ed576d8d31"
+    },
+    {
+      "file": "05-lightening.jpg",
+      "bytes": 74309,
+      "sha256": "89a2f17a197ff1a82db92c53768a246c1c27cfb0766b286afb97c4b78ebcaff4"
+    },
+    {
+      "file": "06-verification.jpg",
+      "bytes": 98451,
+      "sha256": "ac416bc2bbc58fac575ec1039a76fcd90db48fb4a4a13b284da6ba3d6b132d78"
+    },
+    {
+      "file": "Q1_topic_0.rq",
+      "bytes": 100,
+      "sha256": "548084af257f939f2a40a5a2d416247960261f949dd6a511aab9b5c031e42c04"
+    },
+    {
+      "file": "Q2_resources.rq",
+      "bytes": 96,
+      "sha256": "4c30f27bd16c68c98a84b77bb80ab1a635525d1e8eaa4019650fa0e12319925c"
+    },
+    {
+      "file": "Q3_missing_author.rq",
+      "bytes": 150,
+      "sha256": "a3d9f978ce1c2787953b3900a54071257100a1dd3b61aaa428e8d5b16b1e1305"
+    },
+    {
+      "file": "Q4_provenance.rq",
+      "bytes": 128,
+      "sha256": "a9abaa77f40c7dc8ababe34faf8f028052160a80513e08fb0a9788a0f156f1f1"
+    },
+    {
+      "file": "Q5_text_resources.rq",
+      "bytes": 92,
+      "sha256": "48d17d0485c30945194ff7ab4619bbacda53ad7c0f921e72a033eee5b3a7ed71"
+    },
+    {
+      "file": "README.md",
+      "bytes": 13294,
+      "sha256": "cddfc792c28fb60dc2439ee2ab608a33462c20fae37861fa18538c4ac45c2611"
+    },
+    {
+      "file": "expected-1000.json",
+      "bytes": 16456,
+      "sha256": "588e7908aefecf1ac36c458c755852b87b76adddf6001c237fb9e899fd3dbf12"
+    },
+    {
+      "file": "expected-20.json",
+      "bytes": 10295,
+      "sha256": "5b1e9a1c9810efd1e7b71b08be05b25d7249b1d87e96461dd1b65376ed99b00e"
+    },
+    {
+      "file": "expected-5000.json",
+      "bytes": 42204,
+      "sha256": "9348ca3d74e6b448af27e2e9a2d802c7c5c24b304229d034ad5d48e0e602a645"
+    },
+    {
+      "file": "graph-1000.ttl",
+      "bytes": 225883,
+      "sha256": "06ee8e5f951ea08b0f10b9b9eeefa832f002cb0c3b3fcf1d35f507e92f8560d6"
+    },
+    {
+      "file": "graph-20.ttl",
+      "bytes": 6259,
+      "sha256": "2c9fe3b0fd122c1f064102ab0e96051e94a2aa2db80c83d7b6ba8ddadc1db2c6"
+    },
+    {
+      "file": "ontology.ttl",
+      "bytes": 774,
+      "sha256": "e1ad0786eb977d6f6ccd0ec7e71aad77f3d7506e9f89b51c70cca4ccc2837aec"
+    },
+    {
+      "file": "requirements.txt",
+      "bytes": 43,
+      "sha256": "0b59f9b95c08d8c1614d763cb270a7977b087a0fd4c2b06e40c23ccf1ea662e7"
+    },
+    {
+      "file": "run_lab.py",
+      "bytes": 16836,
+      "sha256": "d3fc17c9fc489a81f92fdbb7ec06d615562641a1f602c558fe675246e5769220"
+    },
+    {
+      "file": "selective-types-1000.ttl",
+      "bytes": 267383,
+      "sha256": "baadfbf2378f3b00f3be17e95f79cd497270082940e9eafbdf2064271786a742"
+    },
+    {
+      "file": "shapes.ttl",
+      "bytes": 387,
+      "sha256": "ed043a0b286235f30f17fde411608f8e662c4ed2b147a64231eda584794a6f06"
+    },
+    {
+      "file": "source-1000.csv",
+      "bytes": 67098,
+      "sha256": "de8b5d65d5ba12d0a3ff9ec2d324251e25c76119c6e9623097461a95542c1166"
+    },
+    {
+      "file": "source-20.csv",
+      "bytes": 1422,
+      "sha256": "2949ac80a8a2c5b611177b35acd5b934acaa26b42a64cc3dbcd1e623d7d71c61"
+    },
+    {
+      "file": "source-5000.csv",
+      "bytes": 339924,
+      "sha256": "bcce259c530a29e21d03d1b4f03d7eb881d82e7285e08030421759843261c408"
+    },
+    {
+      "file": "topic-0-1000.ttl",
+      "bytes": 39567,
+      "sha256": "c39398d1aa8732ef8e251768ba66f97d7143289d4fe5463e600929d78c1b7e2e"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+PREFIX ex: <https://example.org/learning/>
+SELECT DISTINCT ?r ?s ?row WHERE {
+      ?r ex:sourceRecord ?s . ?s ex:row ?row
+    }
