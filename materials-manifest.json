@@ -48,8 +48,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 29632,
-      "sha256": "564cba5bfeae599f939119932a0d0619a10fbabac8a9812d0f2ef04d34e2d35a"
+      "bytes": 29630,
+      "sha256": "754d978b1712d83b25883e814509a54c6b557f5ca26daaf56ccd550a5382db39"
     },
     {
       "file": "expected-1000.json",
