@@ -272,6 +272,78 @@ Windows PowerShell:
 
 run_lab.py는 원천 CSV를 매번 같은 규칙으로 생성하고 run-20 폴더에 결과를 씁니다. 제공한 source-20.csv를 직접 수정해도 그 파일이 자동으로 입력되는 구조는 아닙니다.
 
+## 생성된 그래프 파일 읽는 법
+
+이 실습의 추론에는 **LLM을 쓰지 않습니다.** `owlrl`이 입력된 사실과 RDFS 규칙을 적용해 결론을 계산합니다. 아래 두 파일을 비교하면 어떤 결론을 추가했는지 직접 읽을 수 있습니다.
+
+| 실행 후 생기는 파일 | 담긴 내용 | 먼저 찾을 것 |
+| --- | --- | --- |
+| `run-20/graph.ttl` | CSV에서 옮긴 사실과 공통 분류 정의 | 자료 0의 원래 타입 `Article`과 작성자·주제·출처 |
+| `run-20/selective-types.ttl` | 같은 사실·정의에 필요한 두 상위 타입만 추가한 그래프 | 자료 0에 추가된 `TextResource`, `LearningResource` |
+
+두 파일은 에디터로 열면 됩니다. 저장소 루트의 [graph-20.ttl](graph-20.ttl)은 제공한 입력의 변환 사본이고, `run-20/graph.ttl`은 직접 실행해서 만든 결과입니다. 1,000건을 실행했다면 같은 파일들이 `run-1000` 폴더에 있습니다.
+
+### 먼저 같은 자료 한 건을 찾는다
+
+`graph.ttl`에서 `ex:resource_00000`을 찾습니다. 아래는 그 자료의 내용을 발췌한 것입니다. `ex:`와 `dct:`의 전체 주소는 파일 맨 위의 `@prefix`에 선언돼 있습니다.
+
+```turtle
+ex:resource_00000 a ex:Article ;
+    dct:title "Same title, distinct resources" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00000 .
+```
+
+이 블록은 자료 0이 **글(Article)**이고, 작성자는 `person_00`, 주제는 `topic_0`, 출처는 `source_resource_00000`이라는 뜻입니다. `a`는 타입을 나타내는 `rdf:type`의 줄임말입니다. 세미콜론으로 이어진 각 줄은 같은 자료에 관한 다른 사실입니다.
+
+출처가 궁금하면 같은 파일에서 `ex:source_resource_00000`이 주어인 부분을 찾습니다.
+
+```turtle
+ex:source_resource_00000 ex:row 2 .
+```
+
+이 자료가 이번 실행의 `source.csv` 2행에서 왔다는 뜻입니다. CSV 헤더가 1행이므로 첫 자료는 2행입니다. 이렇게 식별자를 따라가면 자료에서 원천 위치까지 연결해 읽을 수 있습니다.
+
+### 추론 후에는 무엇이 추가됐는지 비교한다
+
+이번에는 `selective-types.ttl`에서 **같은 `ex:resource_00000`**을 찾습니다.
+
+```turtle
+ex:resource_00000 a ex:Article,
+        ex:LearningResource,
+        ex:TextResource ;
+    dct:title "Same title, distinct resources" ;
+    ex:authoredBy ex:person_00 ;
+    ex:coversTopic ex:topic_0 ;
+    ex:sourceRecord ex:source_resource_00000 .
+```
+
+작성자·주제·출처는 그대로이고, 타입에 `LearningResource`와 `TextResource`가 추가됐습니다. 여기서 쉼표는 **같은 주어·같은 관계의 목적어를 이어 적는 기호**입니다. 자료 0이 세 종류에 속한다는 세 트리플을 한데 적은 것입니다.
+
+```turtle
+ex:resource_00000 a ex:Article .
+ex:resource_00000 a ex:LearningResource .
+ex:resource_00000 a ex:TextResource .
+```
+
+### 추가된 타입의 근거를 찾는다
+
+입력 그래프의 분류 관계만 추려 쓰면 다음과 같습니다. 같은 정의를 [ontology.ttl](ontology.ttl)에서도 확인할 수 있습니다.
+
+```turtle
+ex:Article rdfs:subClassOf ex:TextResource .
+ex:TextResource rdfs:subClassOf ex:LearningResource .
+```
+
+자료 0은 Article이고, Article은 TextResource에 포함되며, TextResource는 LearningResource에 포함됩니다. 이 정의 때문에 자료 0에도 두 상위 타입을 추가할 수 있습니다. 새로운 자료를 만들어 낸 것이 아니라 **같은 자료에 대해 정의에서 따라오는 분류를 계산한 것**입니다.
+
+`resource_00001`도 비교해 보세요. 이 자료는 Course이므로 `LearningResource`는 추가되지만 `TextResource`는 추가되지 않습니다.
+
+20건 실행에서 `graph.ttl`은 163트리플, `selective-types.ttl`은 193트리플입니다. 학습 자료 타입 20개와 글의 텍스트 자료 타입 10개가 추가된 차이입니다. 전체 RDFS 추론 결과 397트리플은 실행 중 메모리에서 만들어 검증에 사용하며, 두 번째 파일에는 그 전체가 아니라 **이번 다섯 질문에 필요한 두 타입만 골라 저장**합니다.
+
+파일을 다시 저장하면 줄이나 타입의 나열 순서가 달라질 수 있습니다. 줄 번호보다 **같은 자료 식별자에 어떤 사실이 적혀 있는지**를 기준으로 비교하면 됩니다.
+
 ## 그다음에 읽을 것
 
 예제 한 건을 이해한 뒤 Medium 1 → 2 → 3편에서 ‘무엇을 줄이고 무엇을 보존해야 하는가’를 읽고, 4 → 5 → 6편으로 실습 과정을 따라가면 됩니다. 글의 1,000건 캡처는 자료 수만 늘린 같은 구조입니다.
